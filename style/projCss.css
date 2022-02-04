@@ -1,0 +1,19 @@
+#button {
+  background-color: pink;
+  width: 200px;
+  height: 200px;
+}
+#bnts {
+  position: static;
+  text-align: center;
+  gap: 5px;
+}
+#result {
+  height: 100px;
+  width: 300px;
+  margin: 50px;
+  position: static;
+  text-align: center;
+  color: blue;
+  font-size: larger;
+}

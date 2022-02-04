@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/projCss.css" />
+    <link rel="icon" href="data:," />
+    <title>guess</title>
+  </head>
+  <body>
+    <div id="btns">
+      <button onclick="setText(1)" class="elem1">1</button>
+      <button onclick="setText(2)" class="elem2">2</button>
+      <button onclick="setText(3)" class="elem3">3</button>
+      <button onclick="setText(4)" class="elem3">4</button>
+      <button onclick="setText(5)" class="elem3">5</button>
+      <button onclick="setText(6)" class="elem3">6</button>
+      <button onclick="setText(7)" class="elem3">7</button>
+      <button onclick="setText(8)" class="elem3">8</button>
+      <button onclick="setText(9)" class="elem3">9</button>
+      <button onclick="setText(10)" class="elem3">10</button>
+    </div>
+    <input id="result" value="Ответ" />
+  </body>
+  <script>
+    function setText(nam) {
+      let num = Math.floor(Math.random() * 10 + 1, 5);
+      let elem = document.getElementById("result");
+      if (num == nam) elem.value = "Угадал";
+      else elem.value = "Неугадал";
+    }
+  </script>
+</html>
